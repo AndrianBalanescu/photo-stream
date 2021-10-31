@@ -22,4 +22,35 @@
 	<link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | relative_url }}" />
 	<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
 	<link rel="mask-icon" href="favicon.svg" />
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/quasar@2.2.2/dist/quasar.min.css'>
+	
+ 
+	<!-- partial:index.partial.html -->
+	<!--
+	  Forked from:
+	  https://quasar.dev/vue-components/toolbar#example--with-avatar
+	-->
+	<div id="q-app" style="min-height: 100vh;">
+	  <div class="q-pa-md">
+		<q-toolbar class="bg-primary text-white">
+		  <q-btn flat round dense icon="menu" class="q-mr-sm"></q-btn>
+		  <q-avatar>
+			<img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+		  </q-avatar>
+	
+		  <q-toolbar-title>Quasar Framework</q-toolbar-title>
+	
+		  <q-btn flat round dense icon="whatshot"></q-btn>
+		</q-toolbar>
+	  </div>
+	</div>
+
+	<script> const app = Vue.createApp({});
+
+app.use(Quasar, { config: {} });
+app.mount('#q-app'); </script>
+	<!-- partial -->
+	  <script src='https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/quasar@2.2.2/dist/quasar.umd.prod.js'></script><script  src="./script.js"></script>
 </head>
